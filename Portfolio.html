@@ -1,0 +1,93 @@
+# Construct the portfolio.html content based on the provided resume and some fictional project details
+
+portfolio_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Cheng Zhao (Zane)</title>
+    <style>
+        body {{
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 40px;
+        }}
+        .container {{
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }}
+        h1, h2 {{
+            color: #FF0000;
+        }}
+        nav {{
+            margin-bottom: 20px;
+        }}
+        nav a {{
+            margin-right: 15px;
+            text-decoration: none;
+            color: #FF0000;
+        }}
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" style="font-weight: bold;">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+    </nav>
+    <div class="container">
+        <h1>Portfolio</h1>
+        <h2>VR Equipment for Parkinson's Treatment</h2>
+        <p>
+        One of the most significant projects I had the privilege to be part of was the development of Virtual Reality (VR) equipment intended for the treatment of Parkinson's disease. This project was a collaboration between multiple interdisciplinary teams. My primary responsibility was to ensure the seamless integration of the software with the hardware. The project was recognized at a national level tech-conference, and our team was invited to present our research findings. This experience underscored the potential of technology in the medical field, and I am eager to explore more such intersections in the future.
+        </p>
+        
+        <h2>IoT-based Home Automation System</h2>
+        <p>
+        During my Bachelor's at Soochow University, I led a team of five in developing an IoT-based home automation system for our capstone project. The system allowed users to control various home appliances using a centralized app. We integrated voice recognition features and ensured compatibility with popular virtual assistants. This project enhanced my understanding of IoT devices, cloud integration, and user experience design.
+        </p>
+
+        <h2>IT Operations at CITIC Nanjing</h2>
+        <p>
+        As an IT Operations Intern at CITIC Nanjing, I collaborated with a team to improve the company's existing IT infrastructure. My primary responsibilities included troubleshooting network issues, optimizing workflows, and implementing solutions to enhance system efficiency. This stint fortified my technical skills and gave me insights into the operational challenges faced by large enterprises.
+        </p>
+
+        <h2>Web Development Projects</h2>
+        <p>
+        Over the years, I've undertaken various web development projects, both individually and as part of teams. These projects range from developing portfolio websites for professionals to creating e-commerce platforms for local businesses. I'm proficient in a plethora of technologies, including Python, Java, and C++, and have hands-on experience with frameworks like Django and Flask. My projects have received commendation for their user-friendly interfaces, optimized performance, and robust security features.
+        </p>
+        
+        <h2>Future Aspirations</h2>
+        <p>
+        I'm continually looking for opportunities to expand my portfolio with innovative and impactful projects. My goal is not just to showcase my technical prowess but to create solutions that address real-world problems. I'm particularly interested in the intersections of technology with healthcare, sustainability, and education. As I move forward, I aim to collaborate with like-minded individuals and organizations to bring transformative solutions to life.
+        </p>
+    </div>
+    <nav style="margin-top: 20px; text-align: center;">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html" style="font-weight: bold;">Portfolio</a>
+        <a href="contact.html">Contact</a>
+        <a href="signin.html">Sign In</a>
+        <a href="signup.html">Sign Up</a>
+        <a href="terms.html">Terms and Conditions</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="cookie.html">Cookie Policy</a>
+    </nav>
+</body>
+</html>
+"""
+
+# Save the content to portfolio.html
+with open("/mnt/data/portfolio.html", "w", encoding="utf-8") as file:
+    file.write(portfolio_content)
+
+"/mnt/data/portfolio.html"
